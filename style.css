@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+html,
+body {
+	height: 100%;
+        position: relative;
+    z-index: -999;
+	width: 100%;
+}
+
+.firstPage {
+    z-index: -1;
+	width: 100%;
+	height: 100vh;
+	background: url(images/1.jpg.webp);
+	background-size: cover;
+	background-position: right top -60px;
+	position: relative;
+}
+
+.firstPage::before {
+    z-index: -1;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+}
+
+.firstPage nav {
+	position: fixed;
+	display: flex;
+    pointer-events: auto;
+	align-items: center;
+    z-index: 9999999;
+	color: white;
+	justify-content: space-around;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	height: 70px;
+}
+
+nav ul {
+	gap: 40px;
+	list-style-type: none;
+	display: flex;
+}
+
+nav ul li{
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.firstPage nav ul li:hover{
+    color: #F25D5D;
+}
+
+.home{
+    position: relative;
+}
+
+.home::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #F25D5D;
+}
+
+.search{
+    padding-left: 100px;
+}
+.search:hover{
+    color: white;
+}
+
+.aboutMe{
+    padding-top: 30px;
+    height: calc(100% - 70px);
+    width: 100%;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content{
+    padding-left: 200px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content h1{
+    background: -webkit-linear-gradient(#ff9696, #ffe89e);
+    font-size: 81px;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+.content p{
+    margin-top: 20px;
+    color: white;
+    line-height: 30px;
+}
+
+.aboutMe button{
+    position: relative;
+    background: transparent;
+    border: 2px solid #F25D5D;
+    color: white;
+    width: 170px;
+    font-weight: 500;
+    font-size: 18px;
+    white-space: nowrap;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+
+.email{
+    padding-left: 200px;
+    padding-top: 40px;
+    display: flex;
+}
+
+.email p{
+    padding-left: 20px;
+    padding-top: 10px;
+    color: white;
+    text-decoration: underline;
+    font-style: italic;
+} 
+
+
+.secondPage{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.secondPage nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 100px 0;
+    min-height: 100px;
+}
+
+.secondPage ul li{
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.all{
+    position: relative;
+}
+
+.all::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #F25D5D;
+}
+
+.imageContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,350px);
+    grid-template-rows: 10px;
+    justify-content: center;
+    gap: 15px;
+    width: 80%;
+}
+
+.box{
+    background-color: red;
+    overflow: hidden;
+}
+
+.box img{
+    width: 100%;      /* Ensure the image takes the full width of .box */
+    height: 100%;     /* Ensure the image takes the full height of .box */
+    object-fit: cover; /* Cover the entire box without distortion */
+    display: block; 
+}
+
+.box_small{
+    grid-row-end: span 26;
+}
+
+.box_medium{
+    grid-row-end: span 33;
+}
+.box_large{
+    grid-row-end: span 45;
+}
