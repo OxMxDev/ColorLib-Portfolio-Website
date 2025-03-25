@@ -221,19 +221,16 @@ nav ul li{
 .small_img{
     grid-row: span 10;
     grid-column: span 5;
-    background-color: blue;
 }
 
 .medium_img{
     grid-row: span 13;
     grid-column: span 5;
-    background-color: green;
 }
 
 .large_img{
     grid-row: span 20;
     grid-column: span 5;
-    background-color: yellow;
 }
 
 .largest_img{
@@ -243,6 +240,16 @@ nav ul li{
 
 .box{
     overflow: hidden;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.box img{
+    transition: scale 0.2s ease-in;
+}
+
+.box img:hover{
+    scale: 1.1;
+    opacity: 0.5;
 }
 
 .footer{
