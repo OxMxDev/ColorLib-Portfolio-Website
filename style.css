@@ -193,7 +193,6 @@ nav ul li{
     grid-auto-rows: 10px;
     grid-auto-columns: 2px;
     gap: 15px;
-    /* overflow: hidden; */
 }
 
 .box2{
@@ -243,6 +242,48 @@ nav ul li{
 }
 
 .box{
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.secondPage button{
+    position: relative;
+    background: transparent;
+    border: 2px solid #F25D5D;
+    width: 170px;
+    font-weight: 500;
+    font-size: 18px;
+    white-space: nowrap;
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin-top: 50px;
+}
+
+.slider{
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    grid-template-rows: 1 200px;
+    overflow: hidden;
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+
+.bottom{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-evenly;
+    width: 100%;
+}
