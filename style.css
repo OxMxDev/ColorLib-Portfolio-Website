@@ -9,13 +9,13 @@
 html,
 body {
 	height: 100%;
-        position: relative;
-    z-index: -999;
+	position: relative;
+	z-index: -999;
 	width: 100%;
 }
 
 .firstPage {
-    z-index: -1;
+	z-index: -1;
 	width: 100%;
 	height: 100vh;
 	background: url(images/1.jpg.webp);
@@ -25,22 +25,22 @@ body {
 }
 
 .firstPage::before {
-    z-index: -1;
+	z-index: -1;
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-    background: rgba(0, 0, 0, 0.4); 
+	background: rgba(0, 0, 0, 0.4);
 }
 
 .firstPage nav {
 	position: fixed;
 	display: flex;
-    pointer-events: auto;
+	pointer-events: auto;
 	align-items: center;
-    z-index: 9999999;
+	z-index: 9999999;
 	color: white;
 	justify-content: space-around;
 	width: 100%;
@@ -54,243 +54,276 @@ nav ul {
 	display: flex;
 }
 
-nav ul li{
-    font-weight: 500;
-    cursor: pointer;
-    transition: color 0.2s ease-in-out;
+nav ul li {
+	font-weight: 500;
+	cursor: pointer;
+	transition: color 0.2s ease-in-out;
 }
 
-.firstPage nav ul li:hover{
-    color: #F25D5D;
+.firstPage nav ul li:hover {
+	color: #f25d5d;
 }
 
-.home{
-    position: relative;
+.home {
+	position: relative;
 }
 
-.home::after{
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #F25D5D;
+.home::after {
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #f25d5d;
 }
 
-.search{
-    padding-left: 100px;
+.search {
+	padding-left: 100px;
 }
-.search:hover{
-    color: white;
-}
-
-.aboutMe{
-    padding-top: 30px;
-    height: calc(100% - 70px);
-    width: 100%;
-    display: flex;
-    position: relative;
-    z-index: 1;
-    justify-content: center;
-    flex-direction: column;
+.search:hover {
+	color: white;
 }
 
-.content{
-    padding-left: 200px;
-    padding-top: 60px;
-    display: flex;
-    flex-direction: column;
+.aboutMe {
+	padding-top: 30px;
+	height: calc(100% - 70px);
+	width: 100%;
+	display: flex;
+	position: relative;
+	z-index: 1;
+	justify-content: center;
+	flex-direction: column;
 }
 
-.content h1{
-    background: -webkit-linear-gradient(#ff9696, #ffe89e);
-    font-size: 81px;
-    -webkit-background-clip:text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 700;
-    line-height: 80px;
+.content {
+	padding-left: 200px;
+	padding-top: 60px;
+	display: flex;
+	flex-direction: column;
 }
 
-.content p{
-    margin-top: 20px;
-    color: white;
-    line-height: 30px;
+.content h1 {
+	background: -webkit-linear-gradient(#ff9696, #ffe89e);
+	font-size: 81px;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 700;
+	line-height: 80px;
 }
 
-.aboutMe button{
-    position: relative;
-    background: transparent;
-    border: 2px solid #F25D5D;
-    color: white;
-    width: 170px;
-    font-weight: 500;
-    font-size: 18px;
-    white-space: nowrap;
-    border-radius: 50px;
-    padding: 10px 20px;
+.content p {
+	margin-top: 20px;
+	color: white;
+	line-height: 30px;
 }
 
-
-.email{
-    padding-left: 200px;
-    padding-top: 40px;
-    display: flex;
+.aboutMe button {
+	position: relative;
+	background: transparent;
+	border: 2px solid #f25d5d;
+	color: white;
+	width: 170px;
+	font-weight: 500;
+	font-size: 18px;
+	white-space: nowrap;
+	border-radius: 50px;
+	padding: 10px 20px;
 }
 
-.email p{
-    padding-left: 20px;
-    padding-top: 10px;
-    color: white;
-    text-decoration: underline;
-    font-style: italic;
-} 
-
-
-.secondPage{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    /* overflow: hidden; */
+.email {
+	padding-left: 200px;
+	padding-top: 40px;
+	display: flex;
 }
 
-.secondPage nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 100px 0;
-    min-height: 100px;
+.email p {
+	padding-left: 20px;
+	padding-top: 10px;
+	color: white;
+	text-decoration: underline;
+	font-style: italic;
 }
 
-.secondPage ul li{
-    display: flex;
-    font-size: 20px;
-    font-weight: 600;
-    cursor: pointer;
+.secondPage {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	/* overflow: hidden; */
 }
 
-.all{
-    position: relative;
+.secondPage nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 100px 0;
+	min-height: 100px;
 }
 
-.all::after{
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #F25D5D;
+.secondPage ul li {
+	display: flex;
+	font-size: 20px;
+	font-weight: 600;
+	cursor: pointer;
 }
 
-.imageContainer{
-    display: grid;
-    width: 80%;
-    grid-template-columns: repeat(auto-fit,minmax(50px,1fr));
-    grid-auto-rows: 10px;
-    grid-auto-columns: 2px;
-    gap: 15px;
+.all {
+	position: relative;
 }
 
-.box2{
-    width: 530px;
+.all::after {
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #f25d5d;
 }
 
-.box2 img{
-    object-position: center -43px;
+.imageContainer {
+	display: grid;
+	width: 80%;
+	grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+	grid-auto-rows: 10px;
+	grid-auto-columns: 2px;
+	gap: 15px;
 }
 
-.box3{
-    height: 360px;
+.box2 {
+	width: 530px;
 }
 
-.box4{
-    height: 535px;
+.box2 img {
+	object-position: center -43px;
+}
+
+.box3 {
+	height: 360px;
+}
+
+.box4 {
+	height: 535px;
 }
 
 .imageContainer img {
-    width: 100%;
-    height: 100%;  /* Ensure the image takes up the full grid cell */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
+	width: 100%;
+	height: 100%; /* Ensure the image takes up the full grid cell */
+	object-fit: cover; /* Ensures the image covers the area without distortion */
 }
 
-
-.small_img{
-    grid-row: span 10;
-    grid-column: span 5;
+.small_img {
+	grid-row: span 10;
+	grid-column: span 5;
 }
 
-.medium_img{
-    grid-row: span 13;
-    grid-column: span 5;
+.medium_img {
+	grid-row: span 13;
+	grid-column: span 5;
 }
 
-.large_img{
-    grid-row: span 20;
-    grid-column: span 5;
+.large_img {
+	grid-row: span 20;
+	grid-column: span 5;
 }
 
-.largest_img{
-    grid-row: span 15;
-    grid-column: span 8;
+.largest_img {
+	grid-row: span 15;
+	grid-column: span 8;
 }
 
-.box{
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 1);
+.box {
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 1);
 }
 
-.box img{
-    transition: scale 0.2s ease-in;
+.box img {
+	transition: scale 0.2s ease-in;
 }
 
-.box img:hover{
-    scale: 1.1;
-    opacity: 0.5;
+.box img:hover {
+	scale: 1.1;
+	opacity: 0.5;
 }
 
-.footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    flex-direction: column;
-    gap: 30px;
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	flex-direction: column;
+	gap: 30px;
 }
 
-.secondPage button{
-    position: relative;
-    background: transparent;
-    border: 2px solid #F25D5D;
-    width: 170px;
-    font-weight: 500;
-    font-size: 18px;
-    white-space: nowrap;
-    border-radius: 20px;
-    padding: 5px 20px;
-    margin-top: 50px;
+.secondPage button {
+	position: relative;
+	background: transparent;
+	border: 2px solid #f25d5d;
+	width: 170px;
+	font-weight: 500;
+	font-size: 18px;
+	white-space: nowrap;
+	border-radius: 20px;
+	padding: 5px 20px;
+	margin-top: 50px;
 }
 
-.slider{
-    display: grid;
-    grid-template-columns: repeat(6 , 1fr);
-    grid-template-rows: 1 200px;
-    overflow: hidden;
+.slider {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 1 200px;
+	overflow: hidden;
 }
 
-.slider img{
-    width: 100%;
-    height: 100%;
+.slider img {
+	width: 100%;
+	height: 100%;
 }
 
-.bottom{
-    padding: 20px 0;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    justify-content: space-evenly;
-    width: 100%;
+.bottom {
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+	.firstPage{
+        background-size: cover;
+        background-position: center;
+    }
+    .content{
+        display: flex;
+        padding: 0;
+    }
+
+    .content h1{
+        font-size: 2rem;
+        line-height: 30px;
+    }
+    .content p{
+        white-space: wrap;
+        font-size: 15px;
+    }
+    .email{
+        padding-left: 0;
+    }
+
+    .aboutMe button{
+        padding: 10px;
+        font-size: 10px;
+        width: 100px;
+    }
+    .email p{
+        font-size: 10px;
+    }
 }
